@@ -149,6 +149,119 @@
         gap:20px;
       }
 
+
+      /*General*/
+
+.tituloSeccion{
+  color: #FFFFFF;
+  transition-duration: 0.5s;
+}
+
+.separadorSeccion{
+  width: 60px;
+  height: 4px;
+  background: #18181b;
+  margin: 16px auto 24px auto;
+  transition-duration: 0.5s;
+}
+
+.seccionSistemas:hover .tituloSeccion{
+  color: #facc15;
+}
+
+.seccionSistemas:hover .separadorSeccion{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #facc15;
+}
+
+.seccionArea:hover .tituloSeccion{
+  color: #facc15;
+}
+
+.seccionArea:hover .separadorSeccion{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #facc15;
+}
+
+.seccionSistemas:hover .separadorSeccion{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #1d4ed8;
+}
+
+
+.tituloSeccionOscura{
+  color: #FFFFFF;
+  transition-duration: 0.5s;
+}
+
+.separadorSeccionOscura{
+  width: 60px;
+  height: 4px;
+  background: #FFFFFF;
+  margin: 16px auto 24px auto;
+  transition-duration: 0.5s;
+}
+
+.seccionInstalaciones:hover .tituloSeccionOscura{
+  color: #facc15;
+}
+
+.seccionInstalaciones:hover .separadorSeccionOscura{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #facc15;
+}
+
+.seccionComunidad:hover .tituloSeccion{
+  color: #1d4ed8;
+}
+
+.seccionComunidad:hover .separadorSeccion{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #1d4ed8;
+}
+
+.area{
+  background:#FFFFFF;
+  transition-duration: 0.5s;
+}
+
+.area:hover{
+  background:#18181b; 
+}
+
+.imagenArea{
+  height: 80px;
+  transition-duration: 0.5s;
+  margin-bottom: 10px;
+}
+
+.tituloArea{
+  color: #18181b;
+}
+
+.textoArea{
+  color: #18181b;
+}
+
+.area:hover .imagenArea{
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.area:hover .tituloArea{
+  color:#facc15;
+}
+
+.area:hover .textoArea{
+  color:#FFFFFF;;
+}
+
+
     </style> 
   </head>
   <body>

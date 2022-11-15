@@ -1,0 +1,114 @@
+<!--Este es el front End-->
+<section>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+      <!--Icono-->
+      <a class="navbar-brand fs-4" href="../tienda/tienda.php">
+        <i class="bi bi-joystick"></i>
+        <span class="">Level Up</span>
+      </a>
+
+      <!--Boton-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Elementos del menú colapsable-->
+      <div class="collapse navbar-collapse" id="menu">   
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link fs-6" href="../tienda/tienda.php">Tienda</a>
+            </li>
+          </ul>
+
+          <hr class="text-white-50">
+
+            <!--Boton de unirse-->
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../perfil/perfil.php">Mi perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="logout.php">Cerrar sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  
+ <section class="" style="background-color: #181818;">
+  <div class="container-lg py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+        <div class="card rounded-3 text-black border border-warning mb-4">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body  p-md-5 mb-mx-md-4" style="border-radius: 1rem;"> 
+            
+                <form action="juego.php" method="post">
+                  <h5 class="fw-bolder">Juego</h5>
+
+                  <div class="text-dark fs-6" >
+                  <h2> <?php echo $NombreJuego; ?> </h2>
+                  <p class="text-justify">
+                    <?php echo $DescripcionJuego; ?>
+                  </p>
+                    <div class="p-3 mb-2 bg-warning text-dark"> <?php echo $GeneroJuego; ?> </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="d-flex justify-content-between fs-6" class="fw-bolder">
+                  <span>Precio: </span><span><?php echo $PrecioJuego; ?></span>
+                  </div>
+
+                  <hr>
+
+                  <div class="d-flex justify-content-between fs-6" class="fw-bolder">
+                  <span>Desarrolladora: </span><span><?php echo $DesarrolladoraJuego; ?></span>
+                  </div>
+
+                  <hr>
+
+                  <div class="d-flex justify-content-between fs-6" class="fw-bolder">
+                  <span>Lanzamiento: </span><span><?php echo $LanzamientoJuego; ?></span>
+                  </div>
+
+                  <hr>
+
+                  <div class="d-flex justify-content-between fs-6" class="fw-bolder">
+                  <span>Plataforma: </span><span><?php echo $PlataformaJuego; ?></span>
+                  </div>
+
+                  <hr>
+
+                  <div class="d-flex align-items-right justify-content-center pb-4">
+                    <!--<button type="button" class="btn btn-outline-dark btn-lg px-5">COMPRAR</button>-->
+                    <input type="submit" name="Comprar" class="btn btn-outline-dark btn-lg px-5" 
+                    <?php
+                      if($var == true){
+                        echo "disabled";
+                      }
+                    ?>
+                    value="<?php echo $EstaComprado ?>">
+                  </div>
+                
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-top" style="background-color: #FFFFFF;">
+                  <div class="">
+                    <img src="<?php echo $UrlImagen; ?>" 
+                    class="img-thumbnail card-img-top img-fluid" class="rounded mx-auto d-block" class="rounded" alt="Minecraft Dungeons" style="width: 500px;" alt="logo">
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</section>
